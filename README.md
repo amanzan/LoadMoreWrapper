@@ -1,6 +1,6 @@
 # LoadMoreWrapper
 
-[![](https://jitpack.io/v/nukc/LoadMoreWrapper.svg)](https://jitpack.io/#nukc/LoadMoreWrapper)
+[![](https://jitpack.io/v/nukc/LoadMoreWrapper.svg)](https://jitpack.io/#amanzan/LoadMoreWrapper)
 
 Fork from https://github.com/nukc/LoadMoreWrapper, migrated to AndroidX
 
