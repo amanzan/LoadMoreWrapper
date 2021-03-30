@@ -1,50 +1,27 @@
 # LoadMoreWrapper
 
-[![Build Status](https://travis-ci.org/nukc/LoadMoreWrapper.svg?branch=master)](https://travis-ci.org/nukc/LoadMoreWrapper)
-[![Download](https://api.bintray.com/packages/nukc/maven/LoadMoreWrapper/images/download.svg) ](https://bintray.com/nukc/maven/LoadMoreWrapper/_latestVersion)
 [![](https://jitpack.io/v/nukc/LoadMoreWrapper.svg)](https://jitpack.io/#nukc/LoadMoreWrapper)
 
-make recyclerView supports load more and customize the footer view, without changes to the original adater of recyclerView.
+Fork from https://github.com/nukc/LoadMoreWrapper, migrated to AndroidX
 
-在不改动 RecyclerView 原有 adapter 的情况下，使其拥有加载更多功能和自定义底部视图。
-
-- 支持当 item 未铺满屏幕的时候仍能够加载更多
-- 支持自定义加载视图
-- 当 layoutManager 为 Grid 和 StaggeredGrid 的时候, 加载更多视图 footerView 仍占据一行
-- 支持设置是否显示没有更多视图，可自定义
-- 支持设置加载失败视图，点击会自动触发加载更多事件
+- Load more support for RecyclerView
+- Footer view customizable
+- No changes to the original RecyclerView adapter
 
 <img src="https://raw.githubusercontent.com/nukc/LoadMoreWrapper/master/images/item.gif"><img src="https://raw.githubusercontent.com/nukc/LoadMoreWrapper/master/images/grid_custom.gif"><img src="https://raw.githubusercontent.com/nukc/LoadMoreWrapper/master/images/staggeredgrid.gif">
 
 ## Installation
 
-JCenter:
-
-add the dependency to your build.gradle:
-```gradle
-    implementation 'com.github.nukc:loadmorewrapper:1.9.1'
+It's on jitpack, so you'll need to add this to your root build.gradle:
+```
+maven { url 'https://jitpack.io' }
 ```
 
+And then in your app/build.gradle:
 
-JitPack:
-
-Step 1. Add the JitPack repository to your build file
-Add it in your root build.gradle at the end of repositories:
-```gradle
-    allprojects {
-        repositories {
-            ...
-            maven { url 'https://jitpack.io' }
-        }
-    }
-```
-
-Step 2. Add the dependency
-```gradle
-    dependencies {
-        implementation 'com.github.nukc:LoadMoreWrapper:v1.9.1'
-    }
-```
+````
+implementation 'com.github.amanzan:LoadMoreWrapper:2.0.0'
+````
 
 ## Usage
 
